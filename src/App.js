@@ -14,7 +14,7 @@ function App() {
           <a
             href="https://github.com/gisbcode/reactfinalapp"
             target="_blank"
-            rel="noreferrer"
+          
           >
             open-sourced on GitHub
           </a>{" "}
@@ -22,13 +22,12 @@ function App() {
           <a
             href="https://reactfinalappgio.netlify.app/"
             target="_blank"
-            rel="noreferrer"
+          
           >
             hosted on Netlify
           </a>
         </footer>
       </div>
-    </div>
   );
 }
 
