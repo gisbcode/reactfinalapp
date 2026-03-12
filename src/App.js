@@ -12,7 +12,7 @@ function App() {
         </a>{" "}
           and is{" "}
           <a
-            href="https://github.com/gisbcode/reactweek5-main/tree/main"
+            href="https://github.com/gisbcode/reactfinalapp"
             target="_blank"
             rel="noreferrer"
           >
@@ -20,7 +20,7 @@ function App() {
           </a>{" "}
           and{" "}
           <a
-            href="https://reactweek5main.netlify.app/"
+            href="https://reactfinalappgio.netlify.app/"
             target="_blank"
             rel="noreferrer"
           >
