@@ -9,10 +9,28 @@ function App() {
         This project was coded by
         <a href="https://github.com/gisbcode" target="blank">
           Giovanna Bellon
-        </a>
-      </footer>
+        </a>{" "}
+          and is{" "}
+          <a
+            href="https://github.com/gisbcode/reactweek5-main/tree/main"
+            target="_blank"
+            rel="noreferrer"
+          >
+            open-sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://reactweek5main.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            hosted on Netlify
+          </a>
+        </footer>
+      </div>
     </div>
   );
 }
+
 
 export default App;
