@@ -13,7 +13,7 @@ function App() {
         and is open sourced on{" "}
         <a href="https://github.com/gisbcode/reactfinalapp" target="blank">
           GitHub
-        </a>
+        </a>{" "}
         and hosted on{" "}
         <a href="https://reactfinalappgio.netlify.app/" target="blank">
           Netlify
