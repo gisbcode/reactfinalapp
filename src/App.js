@@ -7,7 +7,9 @@ function App() {
       <h1>Weather App</h1>
       <footer>
         This project was coded by
-        <a href="" target="blank">Giovanna Bellon</a>
+        <a href="https://github.com/gisbcode" target="blank">
+          Giovanna Bellon
+        </a>
       </footer>
     </div>
   );
