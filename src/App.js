@@ -9,27 +9,18 @@ function App() {
         This project was coded by
         <a href="https://github.com/gisbcode" target="blank">
           Giovanna Bellon
-        </a>{" "}
-          and is{" "}
-          <a
-            href="https://github.com/gisbcode/reactfinalapp"
-            target="_blank"
-          
-          >
-            open-sourced on GitHub
-          </a>{" "}
-          and{" "}
-          <a
-            href="https://reactfinalappgio.netlify.app/"
-            target="_blank"
-          
-          >
-            hosted on Netlify
-          </a>
-        </footer>
-      </div>
+        </a>
+        and is open sourced on{" "}
+        <a href="https://github.com/gisbcode/reactfinalapp" target="blank">
+          GitHub
+        </a>
+        and hosted on{" "}
+        <a href="https://reactfinalappgio.netlify.app/" target="blank">
+          Netlify
+        </a>
+      </footer>
+    </div>
   );
 }
-
 
 export default App;
