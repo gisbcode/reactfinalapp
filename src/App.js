@@ -1,10 +1,14 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">Weather App
-     
+    <div className="App">
+      <h1>Weather App</h1>
+      <footer>
+        This project was coded by
+        <a href="" target="blank">Giovanna Bellon</a>
+      </footer>
     </div>
   );
 }
