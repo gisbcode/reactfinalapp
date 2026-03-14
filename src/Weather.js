@@ -38,30 +38,43 @@ export default function Weather() {
     setCity(event.target.value);
   }
 
-  function mapIcon(iconCode) {
-    const iconMap = {
-      "01d": "CLEAR_DAY",
-      "01n": "CLEAR_NIGHT",
-      "02d": "PARTLY_CLOUDY_DAY",
-      "02n": "PARTLY_CLOUDY_NIGHT",
-      "03d": "CLOUDY",
-      "03n": "CLOUDY",
-      "04d": "CLOUDY",
-      "04n": "CLOUDY",
-      "09d": "RAIN",
-      "09n": "RAIN",
-      "10d": "RAIN",
-      "10n": "RAIN",
-      "11d": "SLEET",
-      "11n": "SLEET",
-      "13d": "SNOW",
-      "13n": "SNOW",
-      "50d": "FOG",
-      "50n": "FOG",
-    };
-
-    return iconMap[iconCode] || "CLEAR_DAY";
+  function search() {
+    const apiKey = "39a3014fd34afe90bc14c4tc7oed280d";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${submittedCity}&key=${apiKey}`;
   }
+
+  if (weatherData.ready) {
+    return (
+      <div className="Weather">
+        <form onSubmit={handleSubmit}>
+          <div className="row">
+            <div className="col-9">
+              <input
+                type="search"
+                placeholder="Enter a city.."
+                className="form-control"
+                autoFocus="on"
+                onChange={handleCityChange}
+              />
+            </div>
+            <div className="col-3">
+              <input
+                type="submit"
+                value="Search"
+                className="btn btn-primary w-100"
+              />
+            </div>
+          </div>
+        </form>
+        <WeatherInfo data={weatherData} />
+        <WeatherForecast coordinates={weatherData.coordinates} />
+      </div>
+    );
+  } else {
+    search();
+    return "Loading...";
+  }
+}
 
   if (!weather) {
     return "Loading...";
