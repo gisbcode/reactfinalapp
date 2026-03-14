@@ -1,6 +1,5 @@
 import react from "react";
 import "./Weather.css";
-import ReactAnimatedWeather from "react-animated-weather";
 
 export default function Weather() {
     return (
