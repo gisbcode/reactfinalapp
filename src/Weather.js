@@ -8,6 +8,8 @@ export default function Weather() {
   const [city, setCity] = useState("London");
   const [weather, setWeather] = useState(null);
 
+  
+
   function handleResponse(response) {
     setWeather({
       temperature: Math.round(response.data.main.temp),
