@@ -2,12 +2,9 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ReactAnimatedWeather from "react-animated-weather";
 
-
-export default function WeatherForecast({ submittedCity }) {
-  const [localCity, setLocalCity] = useState("");
-  let [loaded, setLoaded] = useState(false);
-  let [forecast, setForecast] = useState(null);
-
+export default function WeatherForecast(props) {
+  const [loaded, setLoaded] = useState(false);
+  const [forecast, setForecast] = useState([]);
 
   function handleResponse(response) {
     setForecast(response.data.daily);
@@ -66,7 +63,6 @@ export default function WeatherForecast({ submittedCity }) {
 
               <ReactAnimatedWeather
                 icon={mapIcon(day.weather[0].icon)}
-                color="blue"
                 size={40}
                 animate={true}
               />
