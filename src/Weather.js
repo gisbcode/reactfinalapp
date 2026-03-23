@@ -29,8 +29,8 @@ export default function Weather() {
 
 
   useEffect(() => {
-    if (!search) return; 
-  }, [search]);
+    search();
+  }, []);
 
   function handleSubmit(event) {
     event.preventDefault();
