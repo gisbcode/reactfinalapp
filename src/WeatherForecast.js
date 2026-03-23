@@ -11,11 +11,12 @@ export default function WeatherForecast(props) {
 
     if (!props.coordinates) return;
 
-    const apiKey = "39a3014fd34afe90bc14c4tc7oed280d";
+    const apiKey = "22a8b6d46bced57bb018a83197efe51a";
     const lat = props.coordinates.lat;
     const lon = props.coordinates.lon;
 
-    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+   const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+;
 
     axios.get(apiUrl).then(handleResponse);
   }, [props.coordinates]);
