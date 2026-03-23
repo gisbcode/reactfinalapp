@@ -27,9 +27,10 @@ export default function Weather() {
     axios.get(apiUrl).then(handleResponse);
   }
 
+
   useEffect(() => {
-    search();
-  }, []);
+    if (!search) return; 
+  }, [search]);
 
   function handleSubmit(event) {
     event.preventDefault();
